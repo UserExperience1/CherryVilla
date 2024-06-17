@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Villa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+   body {
+    background-image: url("img/img.JPG");
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 1rem;
+}
+
+.logo img {
+    height: 50px; /* Adjust this size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    color: black;
+    font-size: 250%;
+}
+
+button{
+    font-size: 150%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    
+    text-align: center;
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.PNG" alt="Cherry Villa Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="dine.html">Dining</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div>
+            <h1>Cherry Villa</h1>
+            <p>If you have any questions or need further information, please don't hesitate to get in touch with us. We're here to help!</p>
+            <p>Cherryvilla@gmail.com</p>
+            <p>+977 9823176231</p>
+            <p>www.cherryvilla.com.np</p>
+            <p>Tinpiple, Kathmandu, Nepal</p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

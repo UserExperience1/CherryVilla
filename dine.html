@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Villa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+   body {
+    background-image: url("img/img.JPG");
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 1rem;
+}
+
+.logo img {
+    height: 50px; /* Adjust this size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+.content {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 250%;
+}
+
+button{
+    font-size: 150%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    
+
+    padding: 1rem;
+    margin-top: -17%;
+   margin-left: 5%;
+    font-size: 180%;
+   
+    
+    text-align: center;
+}
+.grid-item1 {
+    
+    margin-top: -17%;
+   margin-left: 150%;
+    font-size: 180%;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.PNG" alt="Cherry Villa Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="dine.html">Dining</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section class="grid-container">
+          
+            <div class="grid-item">
+               
+                <p><img   src="img/Dine0.JPG" height="500px" width="500px"></p>
+               
+                
+            </div>
+            <div class="grid-item1">
+                
+              <p><img src="img/Dine1.JPG" height="500px" width="750px"></p>
+            </div>
+           
+           
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

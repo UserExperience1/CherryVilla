@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Villa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+ 
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 1rem;
+}
+
+.logo img {
+    height: 50px; /* Adjust this size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 218%;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("img/img.JPG");
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    
+    
+    height: 100vh;
+}
+
+.container {
+    display: block;
+    background-color: white;
+    margin-left: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmation {
+    text-align: center;
+}
+
+
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.PNG" alt="Cherry Villa Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="dine.html">Dining</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+
+    <div class="container">
+        <h1>Book Now</h1>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmation" class="hidden">
+            <h2>Thank You!</h2>
+            <p>Your booking request has been submitted. We will contact you shortly to confirm your booking.</p>
+        </div>
+    </div>
+
+  
+    <footer>
+
+    </footer>
+</body>
+</html>
