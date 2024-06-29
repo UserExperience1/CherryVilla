@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cherry Villa</title>
+    <title>Rooms</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-   body {
-    background-image: url("img/img.JPG");
-    margin: 0;
+    body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-
 .navbar {
     display: flex;
     align-items: center;
@@ -24,7 +24,6 @@
 .logo img {
     height: 50px; /* Adjust this size as needed */
 }
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -46,32 +45,55 @@
     text-decoration: underline;
 }
 
-.content {
-    padding: 2rem;
-    text-align: center;
-    color: white;
-    font-size: 250%;
-}
-
-
-button{
-    font-size: 150%;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.grid-item {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border: 2px solid #ddd;
-    
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
+h1, h2 {
+    color: #003366;
+}
+
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.room {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.room img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.room h2 {
+    margin: 10px 0;
+}
+
+.room p {
+    padding: 0 10px 20px;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
+}
 </style>
 <body>
     <nav class="navbar">
@@ -86,14 +108,31 @@ button{
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <header>
+        <h1>Our Rooms</h1>
+        <p>Experience luxury and comfort in our beautifully designed rooms.</p>
+    </header>
 
-    <main class="content">
-       <div>
-<p><img src="img/logo.PNG"></p>
-       </div>
-    </main>
+    <section class="rooms">
+        <div class="room">
+            <img src="img/Room.JPG" alt="Room 1">
+            <h2>Deluxe Room</h2>
+            <p>Our Deluxe Room offers stunning views and luxurious amenities for a comfortable stay.</p>
+        </div>
+        <div class="room">
+            <img src="img/Room.JPG" alt="Room 2">
+            <h2>Superior Room</h2>
+            <p>The Superior Room combines elegance and functionality, perfect for both relaxation and work.</p>
+        </div>
+        <div class="room">
+            <img src="img/Room.JPG" alt="Room 3">
+            <h2>Suite</h2>
+            <p>Experience ultimate luxury in our spacious Suite, featuring a separate living area and premium facilities.</p>
+        </div>
+    </section>
+
     <footer>
-
+        <p>&copy; 2022 Cherry Villa All rights reserved.</p>
     </footer>
 </body>
 </html>
