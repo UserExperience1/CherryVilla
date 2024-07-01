@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cherry Villa</title>
+    <title>Book Now - Cherry Villa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
- 
-
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -24,7 +28,7 @@
 .nav-links {
     list-style: none;
     display: flex;
-    margin-left: 218%;
+    margin: 0;
     padding: 0;
 }
 
@@ -43,77 +47,65 @@
 }
 
 
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-image: url("img/img.JPG");
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    
-    
-    height: 100vh;
-}
-
-.container {
-    display: block;
-    background-color: white;
-    margin-left: 100%;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 450px;
-    width: 100%;
-}
-
-h1 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: #333;
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
+ h2 {
+    color: #003366;
+}
+
+.booking-form {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
 label {
-    display: block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
     
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    background-color: #003366;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #00509e;
 }
 
-.hidden {
-    display: none;
-}
-
-#confirmation {
+footer {
     text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
 }
-
-
-
 </style>
 <body>
     <nav class="navbar">
@@ -128,40 +120,52 @@ button:hover {
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-   
+    <header>
+        <h1>Book Your Stay</h1>
+        <p>Reserve your room at our resort for an unforgettable experience.</p>
+    </header>
 
-    <div class="container">
-        <h1>Book Now</h1>
-        <form id="bookingForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-            
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required>
-            
-            <label for="time">Preferred Time:</label>
-            <input type="time" id="time" name="time" required>
-            
-            <label for="message">Additional Information:</label>
-            <textarea id="message" name="message"></textarea>
-            
-            <button type="submit">Submit</button>
+    <section class="booking-form">
+        <h2>Booking Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="checkin">Check-In Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-Out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+            <div class="form-group">
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="superior">Superior Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+            </div>
+            <button type="submit">Book Now</button>
         </form>
-        <div id="confirmation" class="hidden">
-            <h2>Thank You!</h2>
-            <p>Your booking request has been submitted. We will contact you shortly to confirm your booking.</p>
-        </div>
-    </div>
+    </section>
 
-  
     <footer>
-
+        <p>Cherry Villa, Tinpiple, Kathmandu, Nepal  |  9823176231  | Cherryvilla@gmail.com</p>
     </footer>
 </body>
 </html>
